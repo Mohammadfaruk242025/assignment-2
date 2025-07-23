@@ -1,0 +1,27 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  max-width: 1440px;
+  height: auto;
+}
+/* sheared color  */
+.grey {
+  color: #8987a1;
+}
+/* navber section  */
+.navber {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 150px;
+}
+nav ul {
+  display: flex;
+  gap: 48px;
+}
+nav ul li {
+  list-style: none;
+}
+/* banner section  */
