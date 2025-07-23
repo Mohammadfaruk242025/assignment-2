@@ -18,8 +18,10 @@
 }
 .nice-color {
   color: rgb(50%, 50%, 50%);
+  font-size: 22px;
 }
 /* navber section  */
+
 .navber {
   display: flex;
   justify-content: space-between;
@@ -53,18 +55,19 @@ nav ul li {
   justify-content: center;
   text-align: center;
 }
-.plant-title h1 {
-  font-size: 50px;
-  font-weight: bold;
-}
 .plant {
   max-width: 1140px;
-  height: 1000px;
+  height: 999.88px;
   margin: 50px 150px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
+.plant-title h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
 .plant div img {
   margin-bottom: 30px;
 }
@@ -91,4 +94,37 @@ nav ul li {
   height: 50px;
   color: #ffffff;
   border: none;
+}
+/* flower and plants lover section  */
+.flower-plants {
+  display: flex;
+  max-width: 1140px;
+  height: 597px;
+  gap: 60px;
+  margin: 210px 150px 0px;
+}
+.flower-plants-left {
+  margin: 39px auto;
+}
+.flower-plants-left h1 {
+  font-size: 50px;
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+.flower-plants-left ul li {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+
+/* lastest deals section  */
+.latest-title {
+  justify-content: center;
+  text-align: center;
+  margin-top: 133px;
+  margin-bottom: 121px;
+}
+.latest-title h1 {
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 16px;
 }
