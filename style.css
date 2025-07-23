@@ -2,13 +2,22 @@
   margin: 0px;
   padding: 0px;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
 .container {
   max-width: 1440px;
   height: auto;
 }
-/* sheared color  */
+/* sheared style  */
 .grey {
   color: #8987a1;
+}
+.unique {
+  color: #e95a08;
+}
+.nice-color {
+  color: rgb(50%, 50%, 50%);
 }
 /* navber section  */
 .navber {
@@ -25,3 +34,61 @@ nav ul li {
   list-style: none;
 }
 /* banner section  */
+.banner {
+  display: flex;
+  margin: 117px 150px;
+  justify-content: center;
+  align-items: center;
+}
+.banner-part {
+  text-align: left;
+}
+.banner-part h1 {
+  font-size: 65px;
+  font-weight: 800;
+}
+
+/* plant section  */
+.plant-title {
+  justify-content: center;
+  text-align: center;
+}
+.plant-title h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.plant {
+  max-width: 1140px;
+  height: 1000px;
+  margin: 50px 150px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.plant div img {
+  margin-bottom: 30px;
+}
+.plant div h4 {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 270px;
+  font-size: 22px;
+  font-weight: 400;
+}
+.plant div h5 {
+  margin-bottom: 30px;
+  text-align: center;
+  width: 270px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.btn {
+  background-color: #e95a08;
+  width: 270px;
+  font-size: 16px;
+  font-weight: 300;
+  height: 50px;
+  color: #ffffff;
+  border: none;
+}
