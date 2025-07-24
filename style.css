@@ -58,10 +58,10 @@ nav ul li {
 .plant {
   max-width: 1140px;
   height: 999.88px;
-  margin: 50px 150px;
+  margin-top: 50px;
+  margin-left: 150px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
 }
 .plant-title h1 {
   font-size: 50px;
@@ -70,6 +70,7 @@ nav ul li {
 
 .plant div img {
   margin-bottom: 30px;
+  gap: 20px;
 }
 .plant div h4 {
   margin-bottom: 20px;
@@ -127,4 +128,49 @@ nav ul li {
   font-size: 50px;
   font-weight: 800;
   margin-bottom: 16px;
+}
+/* join section start  */
+.join {
+  max-width: 1440px;
+  height: 533px;
+  text-align: center;
+  padding-top: 199px;
+  font-size: 50px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  margin-right: 0px;
+  background-image: url("./assets/news-letter-bg.png");
+}
+.join input {
+  width: 644px;
+  height: 50px;
+  padding-left: 20px;
+  border: none;
+}
+.join button {
+  width: 186px;
+  height: 50px;
+  background-color: #e95a08;
+  border: none;
+}
+/* footer section  */
+.footer-end-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  max-width: 1120px;
+  height: 248px;
+  margin: 0px 160px;
+}
+.footer-home ul li {
+  padding-bottom: 32px;
+  list-style: none;
+}
+.footer-features ul li {
+  padding-bottom: 32px;
+  list-style: none;
+}
+.footer-icon img {
+  padding-left: 24px;
 }
