@@ -65,7 +65,7 @@ nav ul li {
 .plant {
   max-width: 1140px;
   height: 999.88px;
-  margin: 50px 150px 0 150px;
+  margin: 50px 160px 0 150px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
