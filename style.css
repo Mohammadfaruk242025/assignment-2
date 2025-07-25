@@ -152,7 +152,7 @@ nav ul li {
 .deals-vervtical {
   border-radius: 14px;
   display: grid;
-  width: 367px;
+  /* width: 367px; */
   gap: 25px;
   grid-template-columns: 1, 1fr;
 }
@@ -252,38 +252,68 @@ nav ul li {
 
 /* mobail device media query  */
 @media screen and (max-width: 576px) {
-  nav ul li :nth-child(2) {
-    visibility: hidden;
+  .navber {
+    justify-content: center;
+    padding-left: 30px;
   }
-  nav ul li :nth-child(3) {
-    visibility: hidden;
-  }
-  nav ul li :nth-child(4) {
-    visibility: hidden;
+  nav ul li {
+    /* visibility: hidden; */
   }
   body {
     background-color: lightgreen;
   }
   .banner {
     flex-direction: column-reverse;
-    margin: 0px;
+    margin: 28px 16px;
   }
-  .banner-part {
-    margin-bottom: 0px;
+  .plant-title {
+    margin: 28px;
   }
   .plant {
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 0px;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 28px;
+    margin: 28px 4px;
   }
+
   .flower-plants {
-    flex-direction: column;
-    margin-top: 1650px;
-    align-items: center;
+    display: grid;
+    margin-top: 1200px;
+    padding-left: 10px;
+    text-align: center;
   }
-  .flower-plants-left {
+
+  .lastest-deals {
+    padding: 10px;
+  }
+  .flower-offer {
+    display: grid;
+    margin-left: 10px;
+    justify-items: center;
+  }
+  .joba .ana .bloom {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+  .badge {
+    visibility: hidden;
+  }
+  .join h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .join-mail {
+    width: auto;
+    justify-content: center;
+  }
+
+  .footer-end-section {
+    display: grid;
+    text-align: start;
+    margin-left: 0px;
+  }
+  .footer-icon {
     padding-left: 0px;
+    gap: 10px;
   }
 }
