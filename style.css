@@ -152,6 +152,7 @@ nav ul li {
 .deals-vervtical {
   border-radius: 14px;
   display: grid;
+
   /* width: 367px; */
   gap: 25px;
   grid-template-columns: 1, 1fr;
@@ -256,12 +257,7 @@ nav ul li {
     justify-content: center;
     padding-left: 30px;
   }
-  nav ul li {
-    /* visibility: hidden; */
-  }
-  body {
-    background-color: lightgreen;
-  }
+
   .banner {
     flex-direction: column-reverse;
     margin: 28px 16px;
@@ -289,10 +285,16 @@ nav ul li {
     margin-left: 10px;
     justify-items: center;
   }
-  .joba .ana .bloom {
-    width: 100%;
+  .deals-vervtical {
+    background-size: contain;
+    width: 600px;
     height: auto;
-    background-size: cover;
+    grid-template-columns: 1fr;
+  }
+  .bloom {
+    width: 361px;
+    height: 184.5px;
+    background-size: contain;
   }
   .badge {
     visibility: hidden;
@@ -303,7 +305,7 @@ nav ul li {
   }
 
   .join-mail {
-    width: auto;
+    width: fit-content;
     justify-content: center;
   }
 
@@ -315,5 +317,14 @@ nav ul li {
   .footer-icon {
     padding-left: 0px;
     gap: 10px;
+  }
+  nav ul li:nth-child(1) {
+    visibility: hidden;
+  }
+  nav ul li:nth-child(2) {
+    visibility: hidden;
+  }
+  nav ul li:nth-child(3) {
+    visibility: hidden;
   }
 }
