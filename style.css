@@ -8,6 +8,7 @@
 .container {
   max-width: 1440px;
   height: auto;
+  font-family: "Noto Serif", serif;
 }
 /* sheared style  */
 .grey {
@@ -19,6 +20,11 @@
 .nice-color {
   color: rgb(50%, 50%, 50%);
   font-size: 22px;
+}
+.badge {
+  position: absolute;
+  top: -20%;
+  left: 34%;
 }
 /* navber section  */
 
@@ -39,8 +45,9 @@ nav ul li {
 .banner {
   display: flex;
   margin: 117px 150px;
+  height: fit-content;
   justify-content: center;
-  align-items: center;
+  align-items: end;
 }
 .banner-part {
   text-align: left;
@@ -58,33 +65,38 @@ nav ul li {
 .plant {
   max-width: 1140px;
   height: 999.88px;
-  margin-top: 50px;
-  margin-left: 150px;
+  margin: 50px 150px 0 150px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+.plant-card {
+  width: 270px;
+  height: fit-content;
+  text-align: center;
+  justify-content: center;
+
+  margin-right: 20px;
 }
 .plant-title h1 {
   font-size: 50px;
   font-weight: bold;
 }
 
-.plant div img {
+.plant-card img {
   margin-bottom: 30px;
-  gap: 20px;
 }
-.plant div h4 {
+.plant-card h4 {
   margin-bottom: 20px;
-  text-align: center;
-  width: 270px;
   font-size: 22px;
   font-weight: 400;
 }
-.plant div h5 {
-  margin-bottom: 30px;
-  text-align: center;
-  width: 270px;
+.plant-card h5 {
+  margin-bottom: 20px;
   font-size: 22px;
   font-weight: 800;
+}
+.plant-card button {
+  margin-bottom: 20px;
 }
 
 .btn {
@@ -100,21 +112,22 @@ nav ul li {
 .flower-plants {
   display: flex;
   max-width: 1140px;
-  height: 597px;
   gap: 60px;
   margin: 210px 150px 0px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 .flower-plants-left {
-  margin: 39px auto;
+  max-width: 540px;
+  height: fit-content;
 }
 .flower-plants-left h1 {
   font-size: 50px;
-  font-weight: 800;
-  padding-bottom: 20px;
+  font-weight: 600;
 }
 .flower-plants-left ul li {
   font-size: 22px;
-  padding-bottom: 20px;
 }
 
 /* lastest deals section  */
@@ -129,6 +142,68 @@ nav ul li {
   font-weight: 800;
   margin-bottom: 16px;
 }
+.flower-offer {
+  display: flex;
+  margin-bottom: 124px;
+  gap: 28px;
+  margin: 0px 146px 124px 146px;
+  opacity: rgba(200, 200, 200, 100%);
+}
+.deals-vervtical {
+  border-radius: 14px;
+  display: grid;
+  width: 367px;
+  gap: 25px;
+  grid-template-columns: 1, 1fr;
+}
+
+.flower-offer button {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+}
+.deals-vervtical button {
+  margin-top: 10px;
+}
+.deals-vervtical h1 {
+  padding-top: 80px;
+}
+.joba h1 {
+  margin-top: 200px;
+}
+.bloom {
+  background-image: url("./assets/deal-bloom.png");
+  height: 201px;
+  background-repeat: no-repeat;
+  border-radius: 14px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.ana {
+  background-image: url("./assets/deal-ana.png");
+  height: 201px;
+  background-repeat: no-repeat;
+  border-radius: 14px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.joba {
+  background-image: url(./assets/deal-zabo.png);
+  margin-right: 0px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 753px;
+  height: 423px;
+  border-radius: 22px;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-size: ;
+}
+
 /* join section start  */
 .join {
   max-width: 1440px;
@@ -173,4 +248,42 @@ nav ul li {
 }
 .footer-icon img {
   padding-left: 24px;
+}
+
+/* mobail device media query  */
+@media screen and (max-width: 576px) {
+  nav ul li :nth-child(2) {
+    visibility: hidden;
+  }
+  nav ul li :nth-child(3) {
+    visibility: hidden;
+  }
+  nav ul li :nth-child(4) {
+    visibility: hidden;
+  }
+  body {
+    background-color: lightgreen;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    margin: 0px;
+  }
+  .banner-part {
+    margin-bottom: 0px;
+  }
+  .plant {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 0px;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 28px;
+  }
+  .flower-plants {
+    flex-direction: column;
+    margin-top: 1650px;
+    align-items: center;
+  }
+  .flower-plants-left {
+    padding-left: 0px;
+  }
 }
